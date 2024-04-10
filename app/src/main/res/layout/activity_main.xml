@@ -44,24 +44,14 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_number_of_people"
+    <Spinner
+        android:id="@+id/spinner_number_of_people"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_total">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_num_people"
-            android:layout_width="match_parent"
-            android:maxLength="2"
-            android:layout_height="match_parent"
-            android:hint="Digite o número de pessoas na mesa"
-            android:inputType="number" />
-        
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/til_total"/>
 
     <RadioGroup
         android:id="@+id/rg_percentage"
@@ -71,9 +61,9 @@
         android:layout_marginStart="16dp"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/til_number_of_people"
-        app:layout_constraintStart_toStartOf="@+id/til_number_of_people"
-        app:layout_constraintTop_toBottomOf="@+id/til_number_of_people">
+        app:layout_constraintEnd_toEndOf="@id/spinner_number_of_people"
+        app:layout_constraintStart_toStartOf="@id/spinner_number_of_people"
+        app:layout_constraintTop_toBottomOf="@id/spinner_number_of_people">
 
         <RadioButton
             android:id="@+id/rb_option_one"
@@ -103,7 +93,7 @@
         android:layout_marginEnd="4dp"
         android:text="Limpar"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
-        app:layout_constraintStart_toStartOf="@+id/til_number_of_people"
+        app:layout_constraintStart_toStartOf="@id/spinner_number_of_people"
         app:layout_constraintTop_toBottomOf="@+id/rg_percentage" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -121,7 +111,7 @@
         android:layout_height="wrap_content"
         android:text="Calcular"
         app:layout_constraintStart_toEndOf="@+id/vertical_guideline"
-        app:layout_constraintEnd_toEndOf="@+id/til_number_of_people"
+        app:layout_constraintEnd_toEndOf="@id/spinner_number_of_people"
         app:layout_constraintTop_toBottomOf="@id/rg_percentage" />
 
     <TextView
