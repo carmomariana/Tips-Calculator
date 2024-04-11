@@ -1,5 +1,6 @@
 package com.example.layoutapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.View
@@ -107,6 +108,9 @@ class MainActivity : AppCompatActivity () {
             binding.rbOptionOne.isChecked = false
             binding.rbOptionTwo.isChecked = false
             binding.rbOptionThree.isChecked = false
+
+            val intent = Intent(this, SummaryActivity::class.java)
+            startActivity(intent)
         }
     }
 }
