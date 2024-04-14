@@ -7,4 +7,123 @@
     android:layout_height="match_parent"
     tools:context=".SummaryActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:text="Sumário"
+        android:textSize="32sp"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:text="Veja abaixo o resumo da sua conta:"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/tv_total_table_label"
+        android:text="Valor da conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
+    
+    <TextView
+        android:id="@+id/tv_total_table"
+        android:text="R$ 250"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_total_table_label"/>
+
+    <TextView
+        android:id="@+id/tv_num_people_label"
+        android:text="Número de pessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_total_table_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_table_label" />
+
+    <TextView
+        android:id="@+id/tv_num_people_table"
+        android:text="5"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num_people_label" />
+
+    <TextView
+        android:id="@+id/tv_percentage_label"
+        android:text= "Gorjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_num_people_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_num_people_label" />
+
+    <TextView
+        android:id="@+id/tv_percentage"
+        android:text="15%"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_percentage_label" />
+    
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_percentage_label"/>
+
+    <TextView
+        android:id="@+id/tv_total_amount_label"
+        android:text= "TOTAL:"
+        app:layout_goneMarginTop="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_num_people_label"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <TextView
+        android:id="@+id/tv_total_amount"
+        android:text="15%"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="R$ 57,50"
+        app:layout_constraintTop_toTopOf="@+id/tv_total_amount_label" />
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:text="refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
