@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/textView"
         android:text="Sumário"
-        android:textSize="32sp"
+        style="@style/Title"
         android:layout_margin="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
