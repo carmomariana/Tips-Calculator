@@ -3,8 +3,7 @@
 Is an Android app to help you to calculate the amount of tip and split the table bill.
 
 ## Screenshots
-<img src="assets/video-app.gif" width="260"/>
-<img src="assets/imagem1.png" width="260"/><img src="assets/imagem2.png" width="260"/><img src="assets/imagem3.png" width="260"/><img src="assets/imagem4.png" width="260"/>
+<img src="assets/video-app.gif" width="260"/><img src="assets/imagem1.png" width="260"/><img src="assets/imagem2.png" width="260"/><img src="assets/imagem3.png" width="260"/><img src="assets/imagem4.png" width="260"/>
 
 
 ## Techs
