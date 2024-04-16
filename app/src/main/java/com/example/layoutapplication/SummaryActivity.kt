@@ -23,7 +23,7 @@ class SummaryActivity : AppCompatActivity() {
         val totalAmountFormatted = String.format("%.2f", totalAmount)
 
 
-        binding.tvPercentage.text = percentage.toString()
+        binding.tvPercentage.text = percentage.toString() + "%"
         binding.tvTotalAmount.text = totalAmountFormatted.toString()
         binding.tvTotalTable.text = totalTable.toString()
         binding.tvNumPeopleTable.text = numPeople.toString()

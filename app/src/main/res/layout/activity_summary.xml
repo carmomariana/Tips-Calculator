@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:text="Sumário"
+        android:text="@string/summary"
         style="@style/Title"
         android:layout_margin="16dp"
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/tv_subtitle"
-        android:text="Veja abaixo o resumo da sua conta:"
+        android:text="@string/summary_subtitle"
         android:layout_marginTop="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
 
     <TextView
         android:id="@+id/tv_total_table_label"
-        android:text="Valor da conta"
+        android:text="@string/total_table"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -46,7 +46,7 @@
 
     <TextView
         android:id="@+id/tv_num_people_label"
-        android:text="Número de pessoas"
+        android:text="@string/num_of_people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -64,7 +64,7 @@
 
     <TextView
         android:id="@+id/tv_percentage_label"
-        android:text= "Gorjeta"
+        android:text= "@string/tip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -94,7 +94,7 @@
 
     <TextView
         android:id="@+id/tv_total_amount_label"
-        android:text= "TOTAL:"
+        android:text= "@string/total"
         app:layout_goneMarginTop="1dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -105,18 +105,19 @@
     <TextView
         android:id="@+id/tv_total_amount"
         android:text="15%"
+        android:maxLength="5"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginEnd="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:text="R$ 57,50"
+        tools:text="57,50"
         app:layout_constraintTop_toTopOf="@+id/tv_total_amount_label" />
 
     <Button
         android:id="@+id/btn_refresh"
-        android:text="refresh"
+        android:text="@string/refresh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
