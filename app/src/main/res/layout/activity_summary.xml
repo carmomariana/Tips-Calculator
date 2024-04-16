@@ -64,7 +64,7 @@
 
     <TextView
         android:id="@+id/tv_percentage_label"
-        android:text= "@string/tip"
+        android:text= "@string/percentage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
